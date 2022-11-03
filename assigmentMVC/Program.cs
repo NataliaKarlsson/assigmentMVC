@@ -29,6 +29,11 @@ namespace assigmentMVC
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "FeverRoute",
+                    pattern: "FeverCheck",
+                    defaults: new {controller = "Doctor", action = "FeverCheck" }
+                    );
+                endpoints.MapControllerRoute(
                  name: "default",
                  pattern: "{controller=Home}/{action=Index}/{id?}"
                     );

@@ -7,14 +7,15 @@
             bool temperature = false;
             while (!temperature)
             {
-                if(temp == 37)
+                if(temp <= 37)
                 {
-                    return "you do not have tamp";
+                    return "You do`t have temp";
                     temperature = true;
                 }
-                else if (temp >36 && temp < 38)
+                else if (temp >37 && temp < 38)
                 {
                     return "You have temp";
+                    
                 }
                 else if(temp < 36)
                 {
@@ -26,7 +27,7 @@
                 }
                 else if (temp > 40)
                 {
-                    return "You should call to the Ambulance";
+                    return "You should call an Ambulance";
                 }
             }
             return "Temp";
