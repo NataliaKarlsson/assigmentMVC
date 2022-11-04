@@ -34,6 +34,11 @@ namespace assigmentMVC
                     defaults: new {controller = "Doctor", action = "FeverCheck" }
                     );
                 endpoints.MapControllerRoute(
+                   name: "GuessRoute",
+                   pattern: "GuessNumber",
+                   defaults: new { controller = "Guess", action = "GuessNumber" }
+                   );
+                endpoints.MapControllerRoute(
                  name: "default",
                  pattern: "{controller=Home}/{action=Index}/{id?}"
                     );

@@ -5,7 +5,7 @@
         public static string Diagnose(double temp)
         {
             bool temperature = false;
-            while (!temperature)
+            
             {
                 if(temp <= 37)
                 {

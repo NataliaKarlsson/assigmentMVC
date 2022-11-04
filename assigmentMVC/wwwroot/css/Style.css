@@ -1,22 +1,40 @@
 ﻿body {
+    
     background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
- .container {
-    background-color: hotpink;
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
 }
- header {
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: plum;
+        
+}
+
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: dimgray;
-    /*background-image: linear-gradient(-120deg, #000000 0%, #44444C 100%);*/
-    padding-left: 10%;
+    background-color: palevioletred;
     padding-right: 10%;
-    height: 100px;
+    height: 130px;
     width: auto;
     font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
-    color: #EFDCF9;
+    color: rebeccapurple;
+    
+    
+}
+
+footer {
+    margin-top: auto;
 }

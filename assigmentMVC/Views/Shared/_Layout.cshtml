@@ -10,7 +10,7 @@
     <header>
         <h3> Online Doctor</h3>
         <nav>
-            <u1>
+            <ul>
                 <li>
                     <a asp-action="Index"asp-controller="Home">Home</a>
                 </li>
@@ -23,15 +23,18 @@
                 <li>
                     <a asp-action="FeverCheck" asp-controller="Doctor">Doctor</a>
                 </li>
+                <li>
+                    <a asp-action="GuessNumber" asp-controller="Guess">Guess Game</a>
+                </li>
                 
-            </u1>
+            </ul>
         </nav>
     </header>
     <div>
         @RenderBody()
     </div>
     <footer>
-        <span>&copy;Nata</span>
+        &copy;Nata
     </footer>
 </body>
 </html>
