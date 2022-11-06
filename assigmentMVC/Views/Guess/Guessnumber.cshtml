@@ -1,12 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Guessnumber";
 }
-<h1>GuessNumber</h1>
+<h1>GuessNumber between 0&100</h1>
 <div class="container2">
     <div class="wrapper">
         <form asp-action="GuessNumber" asp-controller="Guess" method="post">
-            <input type="number" placeholder="Check your number" name="num" value="" />
+            <input type="number" placeholder="Check your number" name="guess" value="" min="0" max="100" step="1"/>
             <button type="submit">Check your num</button>
+            <br />
+            <br /><button class="submit" type="submit">Check your guess</button>
             <p>
                 @if (ViewBag.Number != null)
                 {
@@ -14,6 +16,7 @@
                 }
             </p>
         </form>
+        <button type="reset" value="">Reset</button>
     </div>
 </div>
 
